@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackFires Blog</title>
+    <style>
+        /* Container with fixed size */
+        .container {
+            width: 300px;
+            height: 150px;
+            border: 2px solid #000;
+            margin: 20px;
+            padding: 10px;
+            overflow-x: scroll; /* Horizontal scroll */
+            overflow-y: scroll; /* Vertical scroll */
+        }
+
+        .content {
+            width: 500px; 
+            height: 300px;
+            background-color: rgb(143, 226, 143);
+            padding: 20px;
+        }
+    </style>
 </head>
 <body style="background-color: #317a7a;">
-    
+    <div class="container">
+        <div class="content">
+            <p>This is an example of horizontal overflow (overflow-x) and vertical overflow (overflow-y) in action.</p>
+            <p>Scroll horizontally to see the content overflow to the right.</p>
+            <p>Scroll vertically to see the content overflow downward.</p>
+        </div>
+    </div>
 </body>
 </html>
